@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FastNet Internet Provider</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f9; }
+    header { background: #0077ff; color: white; text-align: center; padding: 2rem 1rem; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { font-size: 1.2rem; }
+    section { padding: 2rem; text-align: center; }
+    .plans { display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+    .plan { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 250px; }
+    .plan h3 { margin-top: 0; }
+    form { max-width: 400px; margin: 2rem auto; background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    form input, form button { width: 100%; padding: 0.8rem; margin: 0.5rem 0; border-radius: 5px; border: 1px solid #ccc; }
+    form button { background: #0077ff; color: white; border: none; cursor: pointer; font-size: 1rem; }
+    form button:hover { background: #005fcc; }
+    footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FastNet Internet</h1>
+    <p>Blazing fast internet for your home & business</p>
+  </header>
+
+  <section>
+    <h2>Our Plans</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Basic</h3>
+        <p>50 Mbps</p>
+        <p>₹499 / month</p>
+      </div>
+      <div class="plan">
+        <h3>Standard</h3>
+        <p>100 Mbps</p>
+        <p>₹799 / month</p>
+      </div>
+      <div class="plan">
+        <h3>Premium</h3>
+        <p>200 Mbps</p>
+        <p>₹1199 / month</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Get Connected</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="phone" placeholder="Phone Number" required />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 FastNet Internet. All rights reserved.</p>
+  </footer>
+</body>
+</html>
